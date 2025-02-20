@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    // "target": "es5",
+    // "outFile": "game.js",
+    "types": ["excalibur"],
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",                      
+    "module": "system",                      
+    "outFile": "./build/game.js",          
+    "declaration": true,                    
+    "sourceMap": true,                      
+    "composite": true,    
+  },
+    "exclude": ["./build"]
+
+}

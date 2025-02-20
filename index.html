@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="node_modules/excalibur/build/dist/excalibur.min.js" defer></script>
+    <script src="build/game.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Phyxels</title>
+</head>
+
+<body>
+    <div id="gameWrap">
+        <div class="container">
+            <div class="toolbar" id="controls">
+                    <select id="elementSelector">
+                    </select>
+                    <label for="saveName">Save Name:</label>
+                    <input type="text" id="saveName" placeholder="Enter save name">
+                    <button id="saveButton">Save</button>
+                    <label for="saveSelector">Saves:</label>
+                    <select id="saveSelector" aria-placeholder="Select a save">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                    <button id="updateButton">Save Selected Save</button>
+                    <button id="loadButton">Load Selected Save</button>
+                    <button id="resetButton">Reset Canvas</button>
+            </div>
+            <canvas id="game"></canvas>
+        </div>
+    </div>
+    <div>
+        <div class="cloud-container">
+            <!-- Clouds will be generated dynamically -->
+        </div>
+    </div>
+    <div class="mountain-container">
+        <!-- Mountains will be generated dynamically -->
+    </div>
+    <div class="backgroundtree-container">
+        <div class="backgroundtree"></div>
+        <div class="backgroundtree"></div>
+    </div>
+    <div class="floor-container">
+        <div class="floor"></div>
+        <div class="floor"></div>
+    </div>
+
+    <div id="themeToggle" class="celestial">
+        <div class="moon-image"></div>
+        <div class="sun-image"></div>
+    </div>
+
+</body>
+
+</html>

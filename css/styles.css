@@ -1,0 +1,94 @@
+canvas {
+    cursor: pointer;
+}
+
+#gameWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#gameWrap header {
+    margin-bottom: 50px;
+}
+
+#gameWrap header::after {
+    content: url('../assets/Large\ Cloud.png');
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    position: absolute;
+    top: 12px;
+    left: 48%;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.button {
+    padding: 20px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+button .playbutton {
+    background: url('../assets/Play\ without\ boarder.png');
+}
+
+button .playbutton:hover {
+    background: url('../assets/Play\ with\ boarder.png');
+}
+
+button .loadbutton {
+    background: url('../assets/Load\ without\ boarder.png');
+}
+
+button .loadbutton:hover {
+    background: url('../assets/Load\ with\ boarder.png');
+}
+
+button .savebutton {
+    background: url('../assets/Save\ without\ boarder.png');
+}
+
+button .savebutton:hover {
+    background: url('../assets/Save\ with\ boarder.png');
+}
+
+button .playbutton,
+button .playbutton:hover,
+button .loadbutton,
+button .loadbutton:hover,
+button .savebutton,
+button .savebutton:hover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    width: 250px;
+    height: 100px;
+}
+
+/* Add styles for the dropdown menu */
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#elementSelector {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

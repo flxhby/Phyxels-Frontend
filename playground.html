@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="node_modules/excalibur/build/dist/excalibur.min.js" defer></script>
+        <script src="build/game.js" defer></script>
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>PLAY</title>
+    </head>
+
+    <body>
+        <div id="controls">
+            <label for="elementSelector">Element:</label>
+            <select id="elementSelector">
+            </select>
+            <label for="saveName">Save Name:</label>
+            <input type="text" id="saveName" placeholder="Enter save name">
+            <button id="saveButton">Save Elements</button>
+            <label for="saveSelector">Existing Saves:</label>
+            <select id="saveSelector">
+                <!-- Options will be populated dynamically -->
+            </select>
+            <button id="updateButton">Update Selected Save</button>
+            <button id="loadButton">Load Selected Save</button>
+            <button id="resetButton">Reset Canvas</button>
+            <input type="file" id="fileInput">
+            <button id="loadFileButton">Load JSON File</button>
+        </div>
+        <div id="gameWrap">
+            <canvas id="game"></canvas>
+        </div>
+    </body>
+
+</html>
